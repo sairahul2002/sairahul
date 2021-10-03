@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  z-index: 1001;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 10px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+.intro {
+  color: white;
+  display: flex;
+  height: 100vh;
+  background-image: url(img/med-badr-chemmaoui-deoSlTaI0JU-unsplash.jpg);
+}
+
+.overlay h1 {
+  color: rgb(255, 255, 255);
+  font-size: calc(70px + 2vw);
+}
+.overlay hr {
+  color: aliceblue;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.overlay h3 {
+  color: aliceblue;
+  font-size: calc(50px + 2vm);
+}
+
+.bio {
+  background-color: black;
+}
+
+.bio h5 {
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio h2 {
+  color: aliceblue;
+}
+
+.bio img {
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
+.bio p {
+  color: aliceblue;
+  max-width: 60ch;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-bottom: 5%;
+}
+
+.line2 {
+  padding-left: 15%;
+  padding-right: 15%;
+  color: aliceblue;
+  padding-bottom: 2%;
+}
+
+.heading {
+  color: aliceblue;
+  background-color: rgb(24, 23, 23);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.heading center {
+  padding: 1mm;
+}
+
+.line3 {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-right: 15%;
+  padding-left: 15%;
+  color: aliceblue;
+}
+
+.skills {
+  padding-top: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills img {
+  padding-left: 12%;
+  padding-bottom: 7%;
+  justify-content: center;
+  align-items: center;
+}
+
+.line4 {
+  color: aliceblue;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+@media (min-width: 768px) {
+  .rahul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+  }
+}
+
+.pic img {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 4%;
+}
+
+.about {
+  color: aliceblue;
+  max-width: 30em;
+  padding-left: 3%;
+}
+
+.about a {
+  color: aliceblue;
+  font-family: fantasy;
+}
+
+.line5 {
+  color: aliceblue;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 2%;
+}
+
+.mywork {
+  color: aliceblue;
+  font: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.mywork h1 {
+  font-size: 200%;
+}
+
+.img-area {
+  display: flex;
+}
+
+.img {
+  padding: 10%;
+}
+
+.img img {
+  width: 75%;
+}
+
+.overlay {
+  position: absolute;
+  color: aliceblue;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and(max-width:720px) {
+  .overlay h1 {
+    font-size: 1000em;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+}
+
+.overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.overlay li {
+  padding: 50%;
+}
+
+.overlay li a {
+  color: aliceblue;
+  size: calc(100px + 2vw);
+}
+
+.btn button {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  color: #eceeee;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btn button a {
+  font-family: "Times New Roman", Times, serif;
+  color: #eceeee;
+  text-decoration: none;
+}
+.btn1 {
+  padding-bottom: 7%;
+}
+.btn1 button {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  color: #eceeee;
+  font-size: 1.5em;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+.btn1 button a {
+  font-family: "Times New Roman", Times, serif;
+  color: #eceeee;
+  text-decoration: none;
+}
